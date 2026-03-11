@@ -483,7 +483,7 @@ p  { font-size: 1rem; }
   p  { font-size: 1.05rem; }
 
   .hero .container {
-    flex-direction: row;
+    flex-direction: column;
     text-align: left;
   }
 }
