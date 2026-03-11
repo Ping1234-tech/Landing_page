@@ -420,108 +420,57 @@ footer {
     font-size: 0.9rem;
 }
 
-/* =======================
-   MOBILE FIRST (Small Phones)
-   ======================= */
-body {
-  font-size: 14px;
-  padding: 10px;
+/* Responsive Styles */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    .hero-details h1 {
+        font-size: 2.5rem;
+    }
+    .hero-details p {
+        font-size: 1.2rem;
+    }
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}   
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .hero-details h1 {
+        font-size: 2rem;
+    }
+    .hero-details p {   
+        font-size: 1rem;
+    }
 }
 
-h1 { font-size: 2rem; }
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.2rem; }
-p  { font-size: 1rem; }
+/*larger screens */
+@media (min-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+}           
 
-.hero .container {
-  flex-direction: column;
-  text-align: center;
-}
-
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-.features-grid, .gallery-grid, .testimonials-grid {
-  grid-template-columns: 1fr;
-}
-
-.pricing-item {
-  padding: 15px;
-}
-
-.price {
-  font-size: 2rem;
-}
-
-.testimonial-author h4 {
-  font-size: 1rem;
-}
-
-.testimonial-author p,
-.testimonial-item > p {
-  font-size: 0.9rem;
-}
-
-.testimonial-item::before {
-  font-size: 2rem;
-}
-
-/* =======================
-   SMALL TABLETS / LARGE PHONES (481px – 768px)
-   ======================= */
-@media (min-width: 481px) and (max-width: 768px) {
-  body {
-    font-size: 15px;
-    padding: 15px;
-  }
-
-  h1 { font-size: 2.2rem; }
-  h2 { font-size: 1.6rem; }
-  h3 { font-size: 1.3rem; }
-  p  { font-size: 1.05rem; }
-
-  .hero .container {
-    flex-direction: column;
-    text-align: left;
-  }
-}
-
-/* =======================
-   TABLETS / SMALL DESKTOPS (769px – 1024px)
-   ======================= */
-@media (min-width: 769px) and (max-width: 1024px) {
-  body {
-    font-size: 16px;
-    padding: 20px;
-  }
-
-  h1 { font-size: 2.3rem; }
-  h2 { font-size: 1.8rem; }
-  h3 { font-size: 1.4rem; }
-  p  { font-size: 1.1rem; }
-
-  .features-grid, .gallery-grid, .testimonials-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* =======================
-   LARGE DESKTOPS (1025px+)
-   ======================= */
-@media (min-width: 1025px) {
-  body {
-    font-size: 18px;
-    padding: 30px;
-  }
-
-  h1 { font-size: 2.5rem; }
-  h2 { font-size: 2rem; }
-  h3 { font-size: 1.5rem; }
-  p  { font-size: 1.2rem; }
-
-  .features-grid, .gallery-grid, .testimonials-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
