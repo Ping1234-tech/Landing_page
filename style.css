@@ -1,0 +1,530 @@
+/*
+1rem = default font size of the browser, which is usually 16px. So, 1rem = 16px.
+h1 | 2.5rem = 2.5 * 16px = 40px
+h2 | 2rem = 2 * 16px = 32px
+h3 | 1.5rem = 1.5 * 16px = 24px
+p | 1rem = 1 * 16px = 16px
+*/
+
+/* Common Styles */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+primary-btn {
+    background: brown;
+    color: white;
+    font-weight: bold;
+    border: 2px solid brown;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+primary-btn:hover {
+    transition:color 0.3s ease
+}
+
+secondary-btn {
+     background: transparent;
+    color: brown;
+    border: 2px solid brown;
+}
+
+secondary-btn:hover {
+    background: brown;
+    color: white;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: brown;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+@media (max-width:768px) {
+    #harmburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    #nav-menu {
+        display:none;
+    }
+
+    #nav-menu.open {
+        display: block;
+    }
+}   
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: brown;
+}
+
+#nav-btn {
+    background: brown;
+    color: white;
+    font-weight: bold;
+    border: 2px solid brown;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(#de6262, #ffb88c);
+    height: 100vh; 
+}
+
+.hero .container {
+    display:flex;
+    align-items: center;
+    gap:20px;
+    padding: 20px 0;
+}
+
+.hero-image img {
+    max-width: 400px;
+}
+
+.hero-details h1 {
+    line-height: 0.9;
+}
+
+.hero-details p {
+    color: #555;
+    text-align: start;
+    
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    background: brown;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: brown;
+    
+}
+.btn-secondary:hover {
+    background: brown;
+    color: white;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Features Secion Styles */
+
+.features-grid,.gallery-grid,.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.feature-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.138);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform:translateY(-10px)
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: brown;
+    margin-bottom: 20px;
+}
+
+.feature-item p {
+    color: #555;
+    line-height: 1;
+}
+
+.feature-item h3 {
+    font-style: italic;
+}
+
+/*Gallery Section Styles */
+.gallery-item {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+}
+
+.gallery-item img{
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.gallery-item p{
+    padding: 20px 15px;
+    text-align: center;
+    color: #555;
+    height: calc(100% - 250px);
+}
+
+/*testimonials section styles */
+.testimonials{
+    background: linear-gradient(#de6262, #ffb88c);
+    padding: 40px;
+}
+
+.testimonial-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    position: relative;
+}
+
+.testimonial-item > p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.testimonial-author{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.testimonial-author img{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-author h4{
+    font-size: 1.2rem;
+    color: brown;
+}
+
+.testimonial-author p{
+    color: #555;
+    margin-top: -30px;
+}
+
+.testimonial-item> p::first-line{
+    color:brown;
+}
+
+.testimonial-item::before{
+    content: '“';
+    font-size: 3rem;
+    color: brown;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+
+/*pricing section styles */
+.pricing-grid,.footer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+} 
+
+.pricing-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.pricing-item:hover {
+    transform: rotate(5deg);
+}
+
+.price {
+    color: #de6262;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.pricing-features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.pricing-item ul li {
+    border-bottom: 1px solid #555;
+    padding: 20px 0;
+}
+
+.popular {
+    border: 2px solid brown;
+    position: relative;
+}
+
+.popular-tag {
+    position: absolute;
+    top:-15px;
+    background-color: brown;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*footer styles */
+footer {
+    background-color:black;
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-logo{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: brown;
+}
+
+.footer-links ul li {
+    list-style: none;
+    padding: 10px 0;
+
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero-details h1 {
+        font-size: 2rem;
+    }
+
+    .features-grid, .gallery-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .pricing-item {
+        padding: 15px;
+    }
+
+    .price {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .testimonial-author h4 {
+        font-size: 1rem;
+    }
+
+    .testimonial-author p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .testimonial-item > p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .testimonial-item::before {
+        font-size: 2rem;
+    }
+}
+
+/* =======================
+   MOBILE FIRST (Small)
+   ======================= */
+body {
+  font-size: 14px; /* default for small screens */
+  padding: 10px;
+}
+
+/* =======================
+   MEDIUM SCREENS (Tablets)
+   ======================= */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    padding: 20px;
+  }
+  /* Example: Adjust header size */
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* =======================
+   LARGE SCREENS (Desktops)
+   ======================= */
+@media only screen and (min-width: 1025px) {
+  body {
+    font-size: 18px;
+    padding: 30px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+
