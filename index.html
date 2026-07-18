@@ -1,316 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="FeareSmart - the ultimate smartwatch with sleek design, health tracking, and smart features.">
-    <title>FeareSmart - Premium Smartwatch</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Forest Spirit </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media-queries.css">
-    <link rel="icon" href="favicon.ico" type="image/svg+xml" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  </head>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="container">
-        <nav class="navbar">
-          <a href="#" class="logo">FeareSmart</a>
-          <div class="hamburger" id="hamburger">
-            <i class="fas fa-bars open-icon"></i>
-            <i class="fas fa-times close-icon"></i>
-          </div>
-          <!-- Nav Links -->
-          <ul class="nav-links" id="nav-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#" class="btn" id="nav-btn">Buy Now</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+</head>
+<body>
+    <div class="forest-header">
+        <i class="ph ph-moon" id="moon-icon"></i>
+    <h1>The Ancient Forest</h1>
+    <div class="forest-stars">
+        <i class="ph ph-star star-icon1" ></i>
+        <i class="ph ph-star star-icon2" ></i>       
+        <i class="ph ph-star star-icon3" ></i>
+        <i class="ph ph-star star-icon4" ></i>
+        <i class="ph ph-star star-icon5" ></i>
+        <i class="ph ph-star star-icon6" ></i>
+        <i class="ph ph-star star-icon7" ></i>
+    </div>
+    </div>
 
-    <main>
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="container">
-          <div class="hero-image">
-            <img src="e-watch.png" alt="FeareSmart Smartwatch" />
-          </div>
-          <div class="hero-details">
-            <h1>
-              Introducing the all new <br />
-              FeareSmart Pro Watch
-            </h1>
-            <p>
-              Experience the future of wearable technology with our premium
-              smartwatch featuring advanced health tracking, seamless
-              connectivity, and stunning design.
-            </p>
-            <div class="hero-buttons">
-              <a href="#pricing" class="btn">Buy Now</a>
-              <a href="#features" class="btn btn-secondary">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Features Section -->
-      <section class="features" id="features">
-        <div class="container">
-          <h2>Why Choose FeareSmart?</h2>
-          <div class="features-grid">
-            <div class="feature-item">
-              <div class="feature-icon">
-                <i class="fa fa-heartbeat"></i>
-              </div>
-              <h3>Health Monitoring</h3>
-              <p>
-                Track your heart rate, blood oxygen, sleep patterns, and stress
-                levels with medical-grade accuracy.
-              </p>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon">
-                <i class="fa fa-bolt"></i>
-              </div>
-              <h3>Long Battery Life</h3>
-              <p>
-                7-day battery life with fast charging capability. Never worry
-                about running out of power.
-              </p>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon">
-                <i class="fa fa-tint"></i>
-              </div>
-              <h3>Water Resistant</h3>
-              <p>
-                Water resistant up to 50 meters. Swim, shower, or get caught in
-                the rain without worry.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Gallery Section -->
-      <section class="gallery" id="gallery">
-        <div class="container">
-          <h2>Gallery</h2>
-          <div class="gallery-grid">
-            <div class="gallery-item">
-              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                  alt="Smartwatch on wrist" />
-              <p>Sleek design for everyday wear</p>
-            </div>
-            <div class="gallery-item">
-              <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                  alt="Smartwatch fitness tracking" />
-              <p>Perfect companion for your workouts</p>
-            </div>
-            <div class="gallery-item">
-              <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                  alt="Smartwatch notifications" />
-              <p>Stay connected without your phone</p>
-            </div>
-            <div class="gallery-item">
-              <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                  alt="Smartwatch with multiple faces" />
-              <p>Customizable watch faces for every style</p>
-            </div>
-            <div class="gallery-item">
-              <img src="https://cdn.shopify.com/s/files/1/0997/6284/files/CFP3_1024x1024.jpg?v=1646478343"
-                  alt="Smartwatch in water" />
-              <p>Swim-proof design for active lifestyles</p>
-            </div>
-            <div class="gallery-item">
-              <img src="https://www.online-tech-tips.com/wp-content/uploads/2020/10/health-benefits.png"
-                  alt="Smartwatch fitness tracking" />
-              <p>Fitness tracking with real-time stats</p>
-            </div>
-            <div class="gallery-item">
-              <img src="https://img.freepik.com/premium-photo/man-is-holding-smartphone-smartwatch-his-hand-wireless-connection-watch-mobile-phone-smart-phone-smart-watch-wifi-connect_431724-9712.jpg"
-                  alt="Smartwatch with phone" />
-              <p>Seamless pairing with your smartphone</p>
-            </div>
-            <div class="gallery-item">
-              <img src="https://i.insider.com/54c119066da811592ecc6d57?width=949&format=jpeg"
-                  alt="Smartwatch notifications" />
-              <p>Instant notifications right on your wrist</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Testimonials Section -->
-      <section class="testimonials">
-        <div class="container">
-          <h2>What Our Customers Say</h2>
-          <div class="testimonials-grid">
-            <div class="testimonial-item">
-              <p>
-                The FeareSmart watch has completely changed how I track my
-                fitness. The accuracy is incredible and the battery life is
-                unmatched.
-              </p>
-              <div class="testimonial-author">
-                <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah J." />
-                <div>
-                  <h4>Sarah J.</h4>
-                  <p>Fitness Enthusiast</p>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-item">
-              <p>
-                As a busy professional, I love being able to quickly check
-                notifications without pulling out my phone. The design is also
-                very stylish.
-              </p>
-              <div class="testimonial-author">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T." />
-                <div>
-                  <h4>Michael T.</h4>
-                  <p>Business Executive</p>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-item">
-              <p>
-                I've tried many smartwatches, but none compare to the FeareSmart.
-                The health features have actually helped me improve my sleep.
-              </p>
-              <div class="testimonial-author">
-                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Jennifer L." />
-                <div>
-                  <h4>Jennifer L.</h4>
-                  <p>Health Coach</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Pricing Section -->
-      <section class="pricing" id="pricing">
-        <div class="container">
-          <h2>Pricing Plans</h2>
-          <div class="pricing-grid">
-            <div class="pricing-item">
-              <h3>Basic</h3>
-              <div class="price">$199</div>
-              <ul class="pricing-features">
-                <li>Standard health tracking</li>
-                <li>3-day battery life</li>
-                <li>Silicone band</li>
-                <li>Basic watch faces</li>
-                <li>1 year warranty</li>
-              </ul>
-              <a href="#" class="btn btn-secondary">Get Started</a>
-            </div>
-            <div class="pricing-item popular">
-              <div class="popular-tag">Most Popular</div>
-              <h3>Premium</h3>
-              <div class="price">$299</div>
-              <ul class="pricing-features">
-                <li>Advanced health tracking</li>
-                <li>7-day battery life</li>
-                <li>Choice of premium band</li>
-                <li>100+ watch faces</li>
-                <li>2 year warranty</li>
-              </ul>
-              <a href="#" class="btn">Get Started</a>
-            </div>
-            <div class="pricing-item">
-              <h3>Pro</h3>
-              <div class="price">$399</div>
-              <ul class="pricing-features">
-                <li>All Premium features</li>
-                <li>ECG and blood pressure</li>
-                <li>Luxury metal band</li>
-                <li>Exclusive watch faces</li>
-                <li>3 year warranty</li>
-              </ul>
-              <a href="#" class="btn btn-secondary">Get Started</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-about">
-            <a href="#" class="footer-logo">FeareSmart</a>
-            <p>
-              Redefining wearable technology with innovative design and
-              cutting-edge features.
-            </p>
-            <div class="social-links">
-              <a href="#" aria-label="FeareSmart on Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" aria-label="FeareSmart on Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="#" aria-label="FeareSmart on Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="#" aria-label="FeareSmart on YouTube"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
-          <div class="footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#features">Features</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#pricing">Pricing</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-          <div class="footer-links">
-            <h4>Support</h4>
-            <ul>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Shipping Policy</a></li>
-              <li><a href="#">Returns & Warranty</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div class="footer-links">
-            <h4>Contact</h4>
-            <ul>
-              <li>
-                <i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon
-                Valley
-              </li>
-              <li><i class="fas fa-phone"></i> (800) 123-4567</li>
-              <li><i class="fas fa-envelope"></i> support@fearesmart.com</li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright">
-          <p>&copy; 2025 FeareSmart. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-  </body>
+    <div class="forest-content">
+        <i class="ph ph-tree" id="tree-icon"></i>
+        <p class="forest-par">"The trees have watched the world longer than we have."</p>
+        <button onclick="generateWhisper()">Hear a Whisper</button>
+        <p id="whisper-output"></p>
+    </div>
 
-  <script defer>
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.getElementById("nav-menu");
-
-    hamburger.addEventListener("click", () => {
-      navMenu.classList.toggle("open");
-      hamburger.classList.toggle("active");
-    });
-
-    document.querySelectorAll("#nav-menu a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navMenu.classList.remove("open");
-        hamburger.classList.remove("active");
-      });
-    });
-  </script>
-
+    <script src="script.js"></script>
+</body>
 </html>
